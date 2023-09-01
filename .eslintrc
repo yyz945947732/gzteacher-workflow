@@ -1,0 +1,29 @@
+{
+  "env": {
+    "es2020": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "airbnb-base"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "unused-imports",
+    "simple-import-sort"
+  ],
+  "rules": {
+    "unused-imports/no-unused-imports": "warn",
+    "simple-import-sort/imports": "warn",
+    "simple-import-sort/exports": "warn"
+  },
+  "import/no-extraneous-dependencies": [
+    "error",
+    {
+      "devDependencies": true
+    }
+  ]
+}

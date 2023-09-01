@@ -1,0 +1,16 @@
+{
+  "include": [
+    "lib/**/*",
+    "bin/**/*"
+  ],
+  "compilerOptions": {
+    "module": "node16",
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "lib": [
+      "ES2015",
+      "DOM"
+    ],
+  }
+}
