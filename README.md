@@ -1,12 +1,14 @@
 # @gzteacher/workflow
 
-🚀 自动化脚本执行发布版本相关任务:
+🚀 版本发布相关自动化工作流脚本:
 
 - 更新版本文件
 - 推送新版本文件
 - 创建新 TAG
 - 推送新 TAG
 - 企业微信消息通知
+
+<img src="./assets/workflow.png" />
 
 ## Install
 
