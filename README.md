@@ -52,7 +52,7 @@ npm run tag
 
 在项目根目录创建 `workflow.config.js` 文件，其中的配置将覆盖默认配置。
 
-以下是一个快速简单配置:
+以下是一个快速的简单配置:
 
 ```javascript
 export default {
@@ -76,7 +76,7 @@ export default {
 
 详细配置可以查看[配置项](#配置项)。
 
-完整配置案例可以查看[配置案例](https://github.com/yyz945947732/gzteacher-workflow/blob/master/lib/example/workflow.config.js)。
+完整配置案例可以查看[配置案例](https://github.com/yyz945947732/gzteacher-workflow/blob/master/example/workflow.config.js)。
 
 #### 类型提示
 
