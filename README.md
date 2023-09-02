@@ -10,7 +10,13 @@
 
 ## Install
 
-全局安装脚本
+本地安装
+
+```sh
+npm install @gzteacher/workflow --save-dev
+```
+
+或全局安装
 
 ```sh
 npm install @gzteacher/workflow -g
