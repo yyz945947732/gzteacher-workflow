@@ -1,5 +1,5 @@
 /**
- * @typedef {import("../../index.d.ts").WorkFlowConfig} WorkFlowConfig
+ * @typedef {import("../index.d.ts").WorkFlowConfig} WorkFlowConfig
  */
 
 /**
@@ -104,9 +104,9 @@ const config = {
      * @default undefined
      */
     getContent: ({ username, tagName }) => `前端项目正式环境更新。\n
-        >项目:<font color="comment">前端项目名</font>
-        >执行人:<font color="comment">${username}</font>
-        >TAG:<font color="comment">${tagName}</font>`,
+          >项目:<font color="comment">前端项目名</font>
+          >执行人:<font color="comment">${username}</font>
+          >TAG:<font color="comment">${tagName}</font>`,
     /**
      * 允许触发消息通知流程的分支名。
      *

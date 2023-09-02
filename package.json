@@ -22,12 +22,8 @@
   ],
   "scripts": {
     "start": "node ./bin/index.js",
-    "lint": "eslint --ext .js --fix"
-  },
-  "lint-staged": {
-    "*.{js,ts}": [
-      "eslint --fix"
-    ]
+    "lint": "eslint --ext .js --fix",
+    "knip": "knip"
   },
   "files": [
     "bin",
@@ -41,12 +37,10 @@
     "find-up": "^6.3.0",
     "fs-extra": "^11.1.1",
     "lodash-es": "^4.17.21",
-    "pathe": "^1.1.1",
     "update-notifier": "^6.0.2",
     "yargs-parser": "^21.1.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.22.10",
     "@types/fs-extra": "^11.0.1",
     "@types/lodash-es": "^4.17.9",
     "@types/node": "^20.5.7",
@@ -54,6 +48,8 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-unused-imports": "^3.0.0",
+    "husky": "^8.0.3",
+    "knip": "^2.21.1",
     "lint-staged": "^14.0.1",
     "typescript": "^5.2.2"
   },
