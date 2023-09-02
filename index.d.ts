@@ -83,7 +83,7 @@ export interface Notify {
    * `undefined` 时不发送消息。
    * @default undefined
    */
-  getUrl?: (ctx: Context) => string;
+  getWebhook?: (ctx: Context) => string;
   /**
    * 配置获取消息内容的方法。支持 md 格式。
    *
@@ -91,7 +91,7 @@ export interface Notify {
    * @see https://developer.work.weixin.qq.com/document/path/91770
    * @default undefined
    */
-  getMsg?: (ctx: Context) => string;
+  getContent?: (ctx: Context) => string;
   /**
    * 允许触发消息通知流程的分支名。
    *

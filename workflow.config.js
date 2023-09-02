@@ -30,8 +30,8 @@ const config = {
     allowBranchs: ['master', 'dev', 'test'],
   },
   notify: {
-    getUrl: () => 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=e8cc0952-11ac-4c18-96c3-4b6821836fc8',
-    getMsg: ({
+    getWebhook: () => 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=e8cc0952-11ac-4c18-96c3-4b6821836fc8',
+    getContent: ({
       username,
       tagName,
     }) => `前端项目正式环境更新，测试环境即将被覆盖，请通知相关测试人员并重新发布测试环境。\n

@@ -19,9 +19,7 @@ yarn-error.log*
 package-lock.json
 /*.log
 /*.lock
-es
 .cache
-coverage
 pnpm-lock.yaml
 .pnpm-debug.log
 package-lock.json
