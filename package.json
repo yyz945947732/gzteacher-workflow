@@ -11,10 +11,13 @@
   "typings": "./index.d.ts",
   "type": "module",
   "keywords": [
-    "workflow",
     "tag",
     "git",
+    "workflow",
+    "autoTag",
     "@gzteacher",
+    "release-it",
+    "version",
     "qyapi.weixin"
   ],
   "scripts": {

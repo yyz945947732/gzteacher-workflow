@@ -18,7 +18,7 @@ export interface WorkFlowConfig {
  */
 export interface Tag {
   /**
-   * 配置获取 tag 格式 {version}-{env}-{order} 中 prefix 值的方法。
+   * 配置获取 tag 格式 {version}-{env}-{order} 中 version 值的方法。
    *
    * 默认取上一个标签中 version 的值。
    * @default ({ preVersion }) => preVersion
@@ -32,9 +32,9 @@ export interface Tag {
    */
   getEnv?: (ctx: Context) => string;
   /**
-   * 配置获取 tag 格式 {version}-{env}-{order} 中 version 值的方法。
+   * 配置获取 tag 格式 {version}-{env}-{order} 中 order 值的方法。
    *
-   * 默认取上一个标签中 version 的值加 1。
+   * 默认取上一个标签中 order 的值加 1。
    * @default ({ preOrder }) => `${Number(preOrder) + 1}`
    */
   getOrder?: (ctx: Context) => string;
