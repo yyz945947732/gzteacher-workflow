@@ -8,6 +8,7 @@
   "bin": {
     "autoTag": "./bin/index.js"
   },
+  "typings": "./index.d.ts",
   "type": "module",
   "keywords": [
     "workflow",
@@ -17,7 +18,8 @@
     "qyapi.weixin"
   ],
   "scripts": {
-    "start": "node --inspect ./bin/index.js"
+    "start": "node ./bin/index.js",
+    "lint": "eslint --ext .js --fix"
   },
   "lint-staged": {
     "*.{js,ts}": [
@@ -26,12 +28,14 @@
   },
   "files": [
     "bin",
-    "lib"
+    "lib",
+    "index.d.ts"
   ],
   "dependencies": {
     "chalk": "^5.3.0",
     "execa": "^8.0.1",
     "find-up": "^6.3.0",
+    "fs-extra": "^11.1.1",
     "lodash-es": "^4.17.21",
     "pathe": "^1.1.1",
     "update-notifier": "^6.0.2",
@@ -39,6 +43,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.22.10",
+    "@types/fs-extra": "^11.0.1",
     "@types/lodash-es": "^4.17.9",
     "@types/node": "^20.5.7",
     "eslint": "^8.48.0",

@@ -4,7 +4,7 @@
     "bin/**/*"
   ],
   "compilerOptions": {
-    "module": "node16",
+    "module": "esnext",
     "allowJs": true,
     "checkJs": true,
     "noEmit": true,
@@ -12,5 +12,6 @@
       "ES2015",
       "DOM"
     ],
+    "moduleResolution": "Bundler"
   }
 }

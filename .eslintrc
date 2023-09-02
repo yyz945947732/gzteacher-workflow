@@ -4,26 +4,20 @@
     "node": true,
     "es6": true
   },
-  "extends": [
-    "airbnb-base"
-  ],
+  "extends": ["airbnb-base"],
   "parserOptions": {
     "ecmaVersion": 11,
     "sourceType": "module"
   },
-  "plugins": [
-    "unused-imports",
-    "simple-import-sort"
-  ],
+  "plugins": ["unused-imports", "simple-import-sort"],
   "rules": {
     "unused-imports/no-unused-imports": "warn",
     "simple-import-sort/imports": "warn",
-    "simple-import-sort/exports": "warn"
-  },
-  "import/no-extraneous-dependencies": [
-    "error",
-    {
-      "devDependencies": true
-    }
-  ]
+    "simple-import-sort/exports": "warn",
+    "linebreak-style": "off",
+    "import/extensions": "off",
+    "comma-dangle": "off",
+    "object-curly-newline": "off",
+    "no-use-before-define": "off"
+  }
 }
