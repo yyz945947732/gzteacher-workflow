@@ -1,13 +1,11 @@
 #!/usr/bin/env node
-import { readFileSync } from 'fs';
+import fs from 'fs-extra';
 import updater from 'update-notifier';
 import parseArgs from 'yargs-parser';
 
 import cli from '../lib/cli/index.js';
 
-const pkg = JSON.parse(
-  readFileSync(new URL('../package.json', import.meta.url), 'utf8')
-);
+const pkg = fs.readJsonSync('../package.json');
 
 const aliases = {
   h: 'help',

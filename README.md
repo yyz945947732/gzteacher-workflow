@@ -68,7 +68,9 @@ export default {
 
 详细配置可以查看[配置项](#配置项)。
 
-完整配置案例可以查看[配置案例](https://github.com/yyz945947732/gzteacher-workflow/lib/example/workflow.config.js)。
+完整配置案例可以查看[配置案例](https://github.com/yyz945947732/gzteacher-workflow/blob/master/lib/example/workflow.config.js)。
+
+#### 类型提示
 
 为了获取良好的类型提示，推荐导入类型并使用 JSDOC 语法获取类型提示支持：
 
