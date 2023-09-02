@@ -24,7 +24,7 @@ autoTag -v
 
 ## Usage
 
-你可以给 `package.json` 文件添加以下命令:
+`package.json` 文件添加以下命令:
 
 ```json
 "scripts": {
@@ -183,7 +183,7 @@ const config = {
 - 类型：`(ctx: Context) => string`
 - 默认值：`undefined`
 
-配置获取消息机器人 webhook 的方法。`undefined` 时不发送消息。配置企业微信机器人可查看[文档]([添加机器人方法](https://developer.work.weixin.qq.com/document/path/91770))。
+配置获取消息机器人 webhook 的方法。`undefined` 时不发送消息。配置企业微信机器人可查看[文档](https://developer.work.weixin.qq.com/document/path/91770)。
 
 ##### notify.getContent
 
