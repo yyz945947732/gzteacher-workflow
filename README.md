@@ -55,7 +55,7 @@ npm run tag
 以下是一个快速的简单配置:
 
 ```javascript
-export default {
+module.exports = {
   tag: {
     getEnv: ({ branchName }) => {
       if (branchName === 'master') {
@@ -93,7 +93,7 @@ export default {
 const config = {
  // ...
 }
-export default config
+module.exports = config;
 ```
 
 ### 配置项
@@ -258,7 +258,7 @@ autoTag -d
 
 ## 手动执行
 
-你可以在代码中调用方法执行发布流程。
+你可以在 Node 环境中调用方法执行发布流程。
 
 ```javascript
 import workflow from '@gzteacher/workflow';

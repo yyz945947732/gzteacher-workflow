@@ -1,5 +1,5 @@
 /**
- * @typedef {import("../types").WorkFlowConfig} WorkFlowConfig
+ * @typedef {import("@gzteacher/workflow/types").WorkFlowConfig} WorkFlowConfig
  */
 
 /**
@@ -117,4 +117,4 @@ const config = {
   },
 };
 
-export default config;
+module.exports = config;
