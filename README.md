@@ -191,7 +191,7 @@ const config = {
 - 类型：`(ctx: Context) => string`
 - 默认值：`undefined`
 
-配置获取消息机器人 webhook 的方法。`undefined` 时不发送消息。配置企业微信机器人可查看[文档](https://developer.work.weixin.qq.com/document/path/91770)。
+配置获取消息机器人 webhook 地址的方法。`undefined` 时不发送消息。你可以将 webhook 地址设置为环境变量以防止泄露。配置企业微信机器人可查看[文档](https://developer.work.weixin.qq.com/document/path/91770)。
 
 ##### notify.getContent
 
