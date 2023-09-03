@@ -1,6 +1,6 @@
 {
   "name": "@gzteacher/workflow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "yyz945947732 <945947732@qq.com>",
   "description": "版本发布相关自动化工作流脚本",
   "homepage": "https://github.com/yyz945947732/gzteacher-workflow",
