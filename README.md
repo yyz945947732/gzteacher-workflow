@@ -26,7 +26,7 @@
 - 推送新 TAG
 - 企业微信消息通知
 
-<img src="./assets/workflow.png" />
+<img src="https://s1.imagehub.cc/images/2023/09/03/workflow.png" alt="workflow.png" border="0" />
 
 ## Install
 
