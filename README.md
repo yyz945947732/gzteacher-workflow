@@ -258,4 +258,4 @@ autoTag -d
 
 ## LICENSE
 
-[MIT](https://github.com/yyz945947732/gzteacher-workflow/blob/master/LICENSE)
+[MIT](https://github.com/yyz945947732/gzteacher-workflow/blob/master/LICENSE.md)
