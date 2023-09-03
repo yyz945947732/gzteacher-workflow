@@ -234,6 +234,8 @@ const config = {
 
 ## 命令行 Cli
 
+全局安装以使用命令行 Cli。
+
 ### version
 
 查看版本。
