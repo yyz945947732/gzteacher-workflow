@@ -84,7 +84,7 @@ export default {
 
 ```js
 /**
- * @typedef {import("@gzteahcer/workflow/index.d.ts").WorkFlowConfig} WorkFlowConfig
+ * @typedef {import("@gzteahcer/workflow/types/index").WorkFlowConfig} WorkFlowConfig
  */
 
 /**

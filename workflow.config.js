@@ -1,6 +1,6 @@
 import 'dotenv/config';
 /**
- * @typedef {import("./index.d.ts").WorkFlowConfig} WorkFlowConfig
+ * @typedef {import("./types/index").WorkFlowConfig} WorkFlowConfig
  */
 
 /**
