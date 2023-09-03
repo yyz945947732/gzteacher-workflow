@@ -256,6 +256,21 @@ autoTag -s
 autoTag -d
 ```
 
+## 手动执行
+
+你可以在代码中调用方法执行发布流程。
+
+```javascript
+import workflow from '@gzteacher/workflow';
+
+const options = {
+  debug: false,
+  silence: false
+}
+
+workflow(options);
+```
+
 ## LICENSE
 
 [MIT](https://github.com/yyz945947732/gzteacher-workflow/blob/master/LICENSE.md)

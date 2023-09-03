@@ -8,6 +8,7 @@
   "bin": {
     "autoTag": "./bin/index.js"
   },
+  "main": "./lib/cli/run.js",
   "typings": "./types/index.d.ts",
   "type": "module",
   "keywords": [
