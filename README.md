@@ -1,5 +1,23 @@
 # @gzteacher/workflow
 
+<p>
+  <a href="https://www.npmjs.com/package/@gzteacher/workflow">
+    <img src="https://img.shields.io/npm/v/@gzteacher/workflow.svg" alt="Version" />
+  </a>
+  <a href="https://github.com/yyz945947732/gzteacher-workflow/pulls">
+    <img
+      src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"
+      alt="PRs Welcome"
+    />
+  </a>
+  <a href="/LICENSE.md">
+    <img
+      src="https://img.shields.io/badge/license-MIT-blue.svg"
+      alt="GitHub license"
+    />
+  </a>
+</p>
+
 🚀 版本发布相关自动化工作流脚本:
 
 - 更新版本文件
