@@ -83,7 +83,7 @@ export interface Notify {
    * `undefined` 时不发送消息。
    * @default undefined
    */
-  getWebhook?: (ctx: Context) => string;
+  getWebhookUrl?: (ctx: Context) => string;
   /**
    * 配置获取消息内容的方法。支持 md 格式。
    *

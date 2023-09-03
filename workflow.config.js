@@ -33,7 +33,7 @@ const config = {
     allowBranchs: ['master', 'dev', 'test'],
   },
   notify: {
-    getWebhook: () => 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=1d610f08-9e33-46df-8f1b-5e31045e267e',
+    getWebhookUrl: () => 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=1d610f08-9e33-46df-8f1b-5e31045e267e',
     getContent: ({ username, tagName }) => `测试工具，打扰了，可以屏蔽我。\n
       >项目:<font color="comment">嗡嗡嗡</font>
       >执行人:<font color="comment">${username}</font>
