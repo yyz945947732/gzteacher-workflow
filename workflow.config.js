@@ -30,7 +30,7 @@ const config = {
     allowBranchs: ['master', 'dev', 'test'],
   },
   notify: {
-    getWebhook: () => 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=e8cc0952-11ac-4c18-96c3-4b6821836fc8',
+    getWebhookUrl: () => 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=e8cc0952-11ac-4c18-96c3-4b6821836fc8',
     getContent: ({
       username,
       tagName,

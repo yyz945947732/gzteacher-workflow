@@ -186,7 +186,7 @@ const config = {
 
 企业微信消息通知相关配置，`undefined` 时关闭消息通知行为
 
-##### notify.getWebhook
+##### notify.getWebhookUrl
 
 - 类型：`(ctx: Context) => string`
 - 默认值：`undefined`

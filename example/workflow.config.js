@@ -95,7 +95,7 @@ const config = {
      * `undefined` 时不发送消息。
      * @default undefined
      */
-    getWebhook: () => 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=<your key>',
+    getWebhookUrl: () => 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=<your key>',
     /**
      * 配置获取消息内容的方法。支持 md 格式。
      *
