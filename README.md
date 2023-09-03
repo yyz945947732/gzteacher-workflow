@@ -28,27 +28,13 @@
 
 <img src="https://s1.imagehub.cc/images/2023/09/03/workflow.png" alt="workflow.png" border="0" />
 
-## Install
+## Quick start
 
 本地安装
 
 ```sh
-npm install @gzteacher/workflow --save-dev
+npm install -D @gzteacher/workflow
 ```
-
-或全局安装
-
-```sh
-npm install @gzteacher/workflow -g
-```
-
-执行以下命令，输出版本号即安装成功。
-
-```bash
-autoTag -v
-```
-
-## Usage
 
 `package.json` 文件添加以下命令:
 
@@ -58,7 +44,13 @@ autoTag -v
 }
 ```
 
-执行命令发布新版本:
+执行以下命令，输出版本号即安装成功。
+
+```bash
+npm run tag -- -v
+```
+
+现在，你可以执行命令发布新版本了。
 
 ```bash
 npm run tag
