@@ -2,7 +2,7 @@
   "name": "@gzteacher/workflow",
   "version": "1.0.0",
   "author": "yyz945947732 <945947732@qq.com>",
-  "description": "gzteacher 项目相关工作流配置",
+  "description": "版本发布相关自动化工作流脚本",
   "homepage": "https://github.com/yyz945947732/gzteacher-workflow",
   "license": "MIT",
   "bin": {
