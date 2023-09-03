@@ -84,7 +84,7 @@ module.exports = {
 
 ```js
 /**
- * @typedef {import("@gzteahcer/workflow/types/index").WorkFlowConfig} WorkFlowConfig
+ * @typedef {import("@gzteahcer/workflow/types").WorkFlowConfig} WorkFlowConfig
  */
 
 /**
