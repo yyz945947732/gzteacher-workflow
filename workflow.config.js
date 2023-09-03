@@ -34,7 +34,7 @@ const config = {
     getWebhookUrl: () => process.env.WEBHOOK_URL,
     getContent: ({ username, tagName }) => `前端项目正式环境更新。\n
       >项目:<font color="comment">项目名字</font>
-      >执行人:<font color="comment">${username || '未知'}</font>
+      >执行人:<font color="comment">${username}</font>
       >TAG:<font color="comment">${tagName}</font>`,
     allowBranchs: ['master'],
   },
