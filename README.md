@@ -283,6 +283,11 @@ const options = {
 workflow(options);
 ```
 
+## VSCode
+
+
+安装 [VERSION](https://marketplace.visualstudio.com/items?itemName=yaoyuanzhang.version-highlight) 插件以支持 `VERSION.***` 文件语法高亮。
+
 ## LICENSE
 
 [MIT](https://github.com/yyz945947732/gzteacher-workflow/blob/master/LICENSE.md)
