@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import fs from 'fs-extra';
 import updater from 'update-notifier';
 import parseArgs from 'yargs-parser';
