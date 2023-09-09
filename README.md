@@ -124,21 +124,21 @@ module.exports = config;
 - 类型：`(ctx: Context) => string`
 - 默认值：`({ preEnv }) => preEnv`
 
-配置新标签获取 tag 格式 {version}-{env}-{order} 中 `env` 值的方法。默认取上一个标签中 `env` 的值。
+配置新标签获取 tag 格式 `{version}-{env}-{order}` 中 `env` 值的方法。默认取上一个标签中 `env` 的值。
 
 ##### tag.getOrder
 
 - 类型：`(ctx: Context) => string`
 - 默认值：`({ preOrder }) => ${Number(preOrder) + 1}`
 
-配置新标签获取 tag 格式 {version}-{env}-{order} 中 `order` 值的方法。默认取上一个标签中 `order` 的值加 1。
+配置新标签获取 tag 格式 `{version}-{env}-{order}`中 `order` 值的方法。默认取上一个标签中 `order` 的值加 1。
 
 ##### tag.getTagName
 
 - 类型：`(ctx: Context) => string`
 - 默认值：`undefined`
 
-配置新标签获取 `tagName` 的方法。结果将替换原 {version}-{env}-{order} 格式的组装。
+配置新标签获取 `tagName` 的方法。结果将替换原 `{version}-{env}-{order}` 格式的组装。
 
 你可以用它来配置自定义的 tag 格式或用它来更灵活的创建新标签名。
 
