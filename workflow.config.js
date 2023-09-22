@@ -40,7 +40,7 @@ const config = {
       >项目:<font color="comment">项目名字</font>
       >执行人:<font color="comment">${username}</font>
       >TAG:<font color="comment">${tagName}</font>`,
-    allowBranchs: ['master'],
+    allowBranchs: ['master', 'test'],
   },
 };
 
