@@ -1,5 +1,7 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
+import 'dotenv/config';
 /**
- * @typedef {import("./index.d.ts").WorkFlowConfig} WorkFlowConfig
+ * @typedef {import("./types/index").WorkFlowConfig} WorkFlowConfig
  */
 
 /**
@@ -33,9 +35,9 @@ const config = {
     allowBranchs: ['master', 'dev', 'test'],
   },
   notify: {
-    getWebhookUrl: () => 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=1d610f08-9e33-46df-8f1b-5e31045e267e',
-    getContent: ({ username, tagName }) => `测试工具，打扰了，可以屏蔽我。\n
-      >项目:<font color="comment">嗡嗡嗡</font>
+    getWebhookUrl: () => process.env.WEBHOOK_URL,
+    getContent: ({ username, tagName }) => `前端项目正式环境更新。\n
+      >项目:<font color="comment">项目名字</font>
       >执行人:<font color="comment">${username}</font>
       >TAG:<font color="comment">${tagName}</font>`,
     allowBranchs: ['master'],

@@ -1,5 +1,23 @@
 # @gzteacher/workflow
 
+<p>
+  <a href="https://www.npmjs.com/package/@gzteacher/workflow">
+    <img src="https://img.shields.io/npm/v/@gzteacher/workflow.svg" alt="Version" />
+  </a>
+  <a href="https://github.com/yyz945947732/gzteacher-workflow/pulls">
+    <img
+      src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"
+      alt="PRs Welcome"
+    />
+  </a>
+  <a href="/LICENSE.md">
+    <img
+      src="https://img.shields.io/badge/license-MIT-blue.svg"
+      alt="GitHub license"
+    />
+  </a>
+</p>
+
 🚀 版本发布相关自动化工作流脚本:
 
 - 更新版本文件
@@ -8,29 +26,15 @@
 - 推送新 TAG
 - 企业微信消息通知
 
-<img src="./assets/workflow.png" />
+<img src="https://s1.imagehub.cc/images/2023/09/03/workflow.png" alt="workflow.png" border="0" />
 
-## Install
+## Quick start
 
 本地安装
 
 ```sh
-npm install @gzteacher/workflow --save-dev
+npm install -D @gzteacher/workflow
 ```
-
-或全局安装
-
-```sh
-npm install @gzteacher/workflow -g
-```
-
-执行以下命令，输出版本号即安装成功。
-
-```bash
-autoTag -v
-```
-
-## Usage
 
 `package.json` 文件添加以下命令:
 
@@ -40,7 +44,13 @@ autoTag -v
 }
 ```
 
-执行命令发布新版本:
+执行以下命令，输出版本号即安装成功。
+
+```bash
+npm run tag -- -v
+```
+
+现在，你可以执行命令发布新版本了。
 
 ```bash
 npm run tag
@@ -55,7 +65,7 @@ npm run tag
 以下是一个快速的简单配置:
 
 ```javascript
-export default {
+module.exports = {
   tag: {
     getEnv: ({ branchName }) => {
       if (branchName === 'master') {
@@ -84,7 +94,7 @@ export default {
 
 ```js
 /**
- * @typedef {import("@gzteahcer/workflow/index.d.ts").WorkFlowConfig} WorkFlowConfig
+ * @typedef {import("@gzteahcer/workflow/types").WorkFlowConfig} WorkFlowConfig
  */
 
 /**
@@ -93,7 +103,7 @@ export default {
 const config = {
  // ...
 }
-export default config
+module.exports = config;
 ```
 
 ### 配置项
@@ -114,21 +124,21 @@ export default config
 - 类型：`(ctx: Context) => string`
 - 默认值：`({ preEnv }) => preEnv`
 
-配置新标签获取 tag 格式 {version}-{env}-{order} 中 `env` 值的方法。默认取上一个标签中 `env` 的值。
+配置新标签获取 tag 格式 `{version}-{env}-{order}` 中 `env` 值的方法。默认取上一个标签中 `env` 的值。
 
 ##### tag.getOrder
 
 - 类型：`(ctx: Context) => string`
 - 默认值：`({ preOrder }) => ${Number(preOrder) + 1}`
 
-配置新标签获取 tag 格式 {version}-{env}-{order} 中 `order` 值的方法。默认取上一个标签中 `order` 的值加 1。
+配置新标签获取 tag 格式 `{version}-{env}-{order}`中 `order` 值的方法。默认取上一个标签中 `order` 的值加 1。
 
 ##### tag.getTagName
 
 - 类型：`(ctx: Context) => string`
 - 默认值：`undefined`
 
-配置新标签获取 `tagName` 的方法。结果将替换原 {version}-{env}-{order} 格式的组装。
+配置新标签获取 `tagName` 的方法。结果将替换原 `{version}-{env}-{order}` 格式的组装。
 
 你可以用它来配置自定义的 tag 格式或用它来更灵活的创建新标签名。
 
@@ -224,6 +234,8 @@ const config = {
 
 ## 命令行 Cli
 
+全局安装以使用命令行 Cli。
+
 ### version
 
 查看版本。
@@ -255,6 +267,26 @@ autoTag -s
 ```bash
 autoTag -d
 ```
+
+## 手动执行
+
+你可以在 Node 环境中调用方法执行发布流程。
+
+```javascript
+import workflow from '@gzteacher/workflow';
+
+const options = {
+  debug: false,
+  silence: false
+}
+
+workflow(options);
+```
+
+## VSCode
+
+
+安装 [VERSION](https://marketplace.visualstudio.com/items?itemName=yaoyuanzhang.version-highlight) 插件以支持 `VERSION.***` 文件语法高亮。
 
 ## LICENSE
 
