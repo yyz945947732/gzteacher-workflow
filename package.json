@@ -38,7 +38,7 @@
     "fs-extra": "^11.1.1",
     "lodash-es": "^4.17.21",
     "qywechat": "^1.0.1",
-    "update-notifier": "^6.0.2",
+    "update-notifier": "^7.0.0",
     "yargs-parser": "^21.1.1"
   },
   "devDependencies": {
