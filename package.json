@@ -64,7 +64,7 @@
     "email": "945947732@qq.com"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "publishConfig": {
     "access": "public"
