@@ -25,7 +25,9 @@
     "start": "node ./bin/index.js",
     "test": "node ./bin/index.js -d",
     "lint": "eslint --ext .js --fix",
-    "knip": "knip"
+    "knip": "knip",
+    "prepare": "husky install",
+    "precommit": "lint-staged"
   },
   "files": [
     "bin",
