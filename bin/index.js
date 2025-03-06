@@ -5,10 +5,9 @@ import updater from 'update-notifier';
 import parseArgs from 'yargs-parser';
 
 import cli from '../lib/cli/index.js';
+import { error } from '../lib/utils/log.js';
 
-const pkg = JSON.parse(
-  fs.readFileSync(new URL('../package.json', import.meta.url), 'utf8')
-);
+const pkg = fs.readJsonSync(new URL('../package.json', import.meta.url));
 
 const aliases = {
   h: 'help',
@@ -25,11 +24,13 @@ const parseCliArguments = (args) => {
   return options;
 };
 
-const options = parseCliArguments([].slice.call(process.argv, 2));
+const options = parseCliArguments(process.argv.slice(2));
 
 updater({ pkg }).notify();
 
-cli(options).then(
-  () => process.exit(0),
-  ({ code }) => process.exit(Number.isInteger(code) ? code : 1)
-);
+cli(options)
+  .then(() => process.exit(0))
+  .catch((err) => {
+    error(err);
+    process.exit(err?.code && Number.isInteger(err.code) ? err.code : 1);
+  });
