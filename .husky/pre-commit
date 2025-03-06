@@ -1,4 +1,17 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+if ! command -v npx >/dev/null 2>&1; then
+  echo "npx 未安装，请安装 Node.js 16+"
+  exit 1
+fi
+
 npx --no-install lint-staged
+status=$?
+if [ $status -ne 0 ]; then
+  echo "❌ Lint-staged 失败，请修复后再提交！"
+  exit 1
+fi
+
+echo "✅ 代码检查通过，准备提交..."
+exit 0
