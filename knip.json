@@ -4,7 +4,6 @@
   ],
   "project": [
     "bin/*.js",
-    "lib/**/*.js",
-    "workflow.config.js"
+    "lib/**/*.js"
   ]
 }
