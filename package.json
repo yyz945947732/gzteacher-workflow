@@ -1,6 +1,6 @@
 {
   "name": "@gzteacher/workflow",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "author": "yyz945947732 <945947732@qq.com>",
   "description": "版本发布相关自动化工作流脚本",
   "homepage": "https://github.com/yyz945947732/gzteacher-workflow",
@@ -41,7 +41,7 @@
     "fs-extra": "^11.1.1",
     "lodash-es": "^4.17.21",
     "qywechat": "^1.0.1",
-    "update-notifier": "^7.0.0",
+    "update-notifier": "^6.0.2",
     "yargs-parser": "^21.1.1"
   },
   "devDependencies": {
