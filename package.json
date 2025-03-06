@@ -23,6 +23,7 @@
   ],
   "scripts": {
     "start": "node ./bin/index.js",
+    "test": "node ./bin/index.js -d",
     "lint": "eslint --ext .js --fix",
     "knip": "knip"
   },
