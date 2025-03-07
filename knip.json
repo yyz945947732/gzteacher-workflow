@@ -1,4 +1,9 @@
 {
-  "entry": ["bin/index.js"],
-  "project": ["bin/*.js", "lib/**/*.js"]
+  "entry": [
+    "bin/index.js"
+  ],
+  "project": [
+    "bin/*.js",
+    "lib/**/*.js"
+  ]
 }

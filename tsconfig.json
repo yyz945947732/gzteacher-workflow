@@ -9,8 +9,7 @@
     "checkJs": true,
     "noEmit": true,
     "lib": [
-      "ES2015",
-      "DOM"
+      "ES2022",
     ],
     "moduleResolution": "Bundler"
   }
