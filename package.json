@@ -22,9 +22,9 @@
     "qyapi.weixin"
   ],
   "scripts": {
-    "start": "node ./bin/index.js",
-    "start:s": "node ./bin/index.js -s",
+    "start": "node ./bin/index.js -d",
     "test": "node ./bin/index.js -d",
+    "tag": "node ./bin/index.js",
     "lint": "eslint --ext .js --fix",
     "knip": "knip",
     "prepare": "husky install",
