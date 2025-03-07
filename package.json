@@ -24,7 +24,7 @@
   "scripts": {
     "start": "node ./bin/index.js -d",
     "test": "node ./bin/index.js -d",
-    "tag": "node ./bin/index.js",
+    "tag": "node ./bin/index.js -s",
     "lint": "eslint --ext .js --fix",
     "knip": "knip",
     "prepare": "husky install",
